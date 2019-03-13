@@ -29,6 +29,7 @@
 .mod-panel .bd li{
 	float: left;
 	width: 25%;
+	height: 27px;
 	line-height: 26px;
 }
 .mod-panel .bd li a{
