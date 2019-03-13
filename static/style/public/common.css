@@ -1,0 +1,74 @@
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h3,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+html{
+	height:100%;
+}
+body{
+	height:100%;
+	font-size:14px;
+	font-family: Arial,Helvetica,"Microsoft Yahei";
+	color:#666;
+}
+a{
+	text-decoration: none;
+	color:#666;
+}
+.wrapper{
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	min-height: 100%;
+}
+.container{
+	margin: 0 20px;
+	padding-bottom: 80px;
+}
+.container .side{
+	float: left;
+	width: 160px;
+}
+.container .main{
+	margin-left: 175px;
+}
+header{
+	position: relative;
+	height: 135px;
+	margin: 0 20px 15px;
+	border-bottom: 1px solid #eee;
+}
+footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	line-height: 36px;
+	text-align: center;
+}
+
+.mod-head{
+	position: relative;
+}
+.mod-head .info{
+	position: absolute;
+	top: 60px;
+	right: 0;
+	line-height: 24px;
+	text-align: right;
+}
+.mod-head .info h2{
+	font-size: 22px;
+	color: #333;
+}
+
+.mod-menu li{
+	margin-bottom: 10px;
+}
+.mod-menu li a{
+	display: inline-block;
+	padding: 0 20px;
+	height: 24px;
+	line-height: 24px;
+}
+.mod-menu li.active a{
+	background: #333;
+	color: #fff;
+}
