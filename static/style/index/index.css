@@ -12,7 +12,7 @@
 }
 .mod-notice .icon-notice{
 	padding-left: 30px;
-	background: url('/static/image/index/icon-notice.png') 0 center no-repeat;
+	background: url('../../image/index/icon-notice.png') 0 center no-repeat;
 }
 
 .mod-panel{
@@ -41,4 +41,63 @@
 .mod-panel .bd li span{
 	margin-left: 7px;
 	color: #888;
+}
+
+@media screen and (max-width: 800px){
+	.wrapper{
+		width: auto;
+	}
+	header{
+		margin: 0 15px 10px;
+		height: 100px;
+	}
+	.container{
+		margin: 0 10px;
+	}
+	.container .side{
+		float: none;
+		width: auto;
+	}
+	.container .main{
+		margin-left: 0;
+	}
+
+	.mod-head .logo{
+		float: left;
+	}
+	.mod-head img{
+		width: 90px;
+		height: 90px;
+	}
+	.mod-head .info{
+		position: static;
+		margin-left: 120px;
+		padding: 25px 0;
+	}
+
+	.mod-menu ul{
+		overflow: hidden;
+	}
+	.mod-menu li{
+		float: left;
+		width: 20%;
+	}
+	.mod-menu li a{
+		display: block;
+		padding: 0 5px;
+		text-align: center;
+	}
+
+	.mod-panel .bd li{
+		width: 50%;
+	}
+	.mod-panel .bd li span{
+		display: none;
+	}
+	.mod-panel .bd li a{
+		display: block;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
 }
