@@ -1,4 +1,13 @@
-.mod-article p{
+.mod-article{
+	margin-bottom: 20px;
+}
+.mod-article .hd h3{
+	line-height: 30px;
+	font-size: 18px;
+}
+.mod-article .bd p{
+	margin-bottom: 5px;
+	line-height: 24px;
 	text-indent: 2em;
 }
 
