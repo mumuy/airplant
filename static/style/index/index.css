@@ -48,50 +48,6 @@
 }
 
 @media screen and (max-width: 800px){
-	.wrapper{
-		width: auto;
-	}
-	header{
-		margin: 0 15px 10px;
-		height: 100px;
-	}
-	.container{
-		margin: 0 10px;
-	}
-	.container .side{
-		float: none;
-		width: auto;
-	}
-	.container .main{
-		margin-left: 0;
-	}
-
-	.mod-head .logo{
-		float: left;
-	}
-	.mod-head img{
-		width: 90px;
-		height: 90px;
-	}
-	.mod-head .info{
-		position: static;
-		margin-left: 120px;
-		padding: 25px 0;
-	}
-
-	.mod-menu ul{
-		overflow: hidden;
-	}
-	.mod-menu li{
-		float: left;
-		width: 20%;
-	}
-	.mod-menu li a{
-		display: block;
-		padding: 0 5px;
-		text-align: center;
-	}
-
 	.mod-panel .bd li{
 		width: 50%;
 	}
