@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>空凤网_AIRPLANT.NET</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+		<meta name="keywords" content="空气凤梨,空凤目录,空气凤梨协会"/>
+		<meta name="description" content="致力于空气凤梨研究学习，打造中国空气凤梨爱好者联盟"/>
+		<link rel="stylesheet" href="static/style/public/common.css">
+		<link rel="stylesheet" href="static/style/product/index.css">
+		<script src="static/script/product/modernizr-custom.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<div class="mod-head">
+					<a class="logo" href="/"><img src="static/image/public/logo.png" alt="空凤网" height="135"></a>
+					<div class="info">
+						<h2>空凤网</h2>
+						<p>中国空气凤梨爱好者联盟</p>
+					</div>
+				</div>
+			</header>
+			<div class="container">
+				<div class="side">
+					<div class="mod-menu">
+						<ul>
+							<li><a href="/">首页</a></li>
+<!-- 							<li><a href="/">活动</a></li>
+							<li><a href="/">目录</a></li> -->
+							<li class="active"><a href="/product.html">精品</a></li>
+							<li><a href="/about.html">关于</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="main">
+					<div class="mod-notice"></div>
+					<div class="mod-list">
+						<div class="grid">
+							<div class="grid__item" data-size="1280x857">
+								<a href="static/image/product/original/1.jpg" class="img-wrap"><img src="static/image/product/thumbnail/1.jpg"/>
+									<div class="description description--grid">
+										<h3>宝雷</h3>
+										<p>四大仙草之首<em>&mdash; 咪咪</em></p>
+										<div class="details">
+											<ul>
+												<li><span>母本：宝石</span></li>
+												<li><span>父本：热带手雷</span></li>
+											</ul>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="grid__item" data-size="1280x1280">
+								<a href="static/image/product/original/2.jpg" class="img-wrap"><img src="static/image/product/thumbnail/2.jpg"/>
+									<div class="description description--grid">
+										<h3>屁噗</h3>
+										<p>T.Apretado x T.sumo, 俗称的“屁噗”。</p>
+										<p>从秋季开始到春季是她最美 的时候，在灯下呈现出橙色、嫩绿 色的渐层融合仿佛一道美味的西点，叶缘会拉出一条红线，叶尖点缀着浓郁的橘红色，革质的金属感 叶面以及渐渐集中的形态继承了母本的特性。</p>
+										<p>春末开始天气渐热，此时父本个性开始呈现，缤纷的色彩褪去，留下可口的奶油绿，叶尖的橙 红留下冬日的印记，为炎热的盛夏带来视觉的清凉感。</p>
+										<p><em>&mdash; 咪咪</em></p>
+										<div class="details">
+											<ul>
+												<li><span>母本：AP精灵</span></li>
+												<li><span>父本：相扑精灵</span></li>
+											</ul>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="preview">
+							<button class="action action--close"><img src="static/image/product/close.png"/></button>
+							<div class="description description--preview"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="mod-foot">
+					<p>Copyright &copy; 2019 <a href="/">AIRPLANT.NET</a></p>
+				</div>
+			</footer>
+		</div>
+		<script src="data/activity.js"></script>
+		<script src="static/script/public/common.js"></script>
+		<script src="static/script/product/imagesloaded.pkgd.min.js"></script>
+		<script src="static/script/product/masonry.pkgd.min.js"></script>
+		<script src="static/script/product/classie.js"></script>
+		<script src="static/script/product/index.js"></script>
+		<script>
+			(function() {
+				var support = { transitions: Modernizr.csstransitions },
+					// transition end event name
+					transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
+					transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+					onEndTransition = function( el, callback ) {
+						var onEndCallbackFn = function( ev ) {
+							if( support.transitions ) {
+								if( ev.target != this ) return;
+								this.removeEventListener( transEndEventName, onEndCallbackFn );
+							}
+							if( callback && typeof callback === 'function' ) { callback.call(this); }
+						};
+						if( support.transitions ) {
+							el.addEventListener( transEndEventName, onEndCallbackFn );
+						}
+						else {
+							onEndCallbackFn();
+						}
+					};
+
+				new GridFx(document.querySelector('.grid'), {
+					imgPosition : {
+						x : -0.5,
+						y : 1
+					},
+					onOpenItem : function(instance, item) {
+						instance.items.forEach(function(el) {
+							if(item != el) {
+								var delay = Math.floor(Math.random() * 50);
+								el.style.WebkitTransition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), -webkit-transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+								el.style.transition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+								el.style.WebkitTransform = 'scale3d(0.1,0.1,1)';
+								el.style.transform = 'scale3d(0.1,0.1,1)';
+								el.style.opacity = 0;
+							}
+						});
+					},
+					onCloseItem : function(instance, item) {
+						instance.items.forEach(function(el) {
+							if(item != el) {
+								el.style.WebkitTransition = 'opacity .4s, -webkit-transform .4s';
+								el.style.transition = 'opacity .4s, transform .4s';
+								el.style.WebkitTransform = 'scale3d(1,1,1)';
+								el.style.transform = 'scale3d(1,1,1)';
+								el.style.opacity = 1;
+
+								onEndTransition(el, function() {
+									el.style.transition = 'none';
+									el.style.WebkitTransform = 'none';
+								});
+							}
+						});
+					}
+				});
+			})();
+		</script>
+	</body>
+</html>

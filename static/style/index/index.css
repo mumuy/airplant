@@ -11,19 +11,6 @@
 	text-indent: 2em;
 }
 
-.mod-notice{
-	margin-bottom: 20px;
-	height: 30px;
-	line-height: 30px;
-	padding: 0 12px;
-	background: #eee;
-	border-radius: 3px;
-}
-.mod-notice .icon-notice{
-	padding-left: 30px;
-	background: url('../../image/index/icon-notice.png') 0 center no-repeat;
-}
-
 .mod-panel{
 	margin-bottom: 20px;
 }
