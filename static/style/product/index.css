@@ -22,8 +22,8 @@
 }
 
 .grid__item {
-	width: 270px;
-	padding: 10px;
+	width: 235px;
+	padding: 5px;
 }
 
 .grid__item--current {
