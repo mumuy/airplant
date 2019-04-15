@@ -1,14 +1,14 @@
 var _activity = {
 	"booking":[
+
+	],
+	"sale":[
 		{
-			"title":"绿领园春季团购即将开团",
-			"starttime":"2019年2月28日",
+			"title":"绿领园即将上新",
+			"starttime":"2019年4月14日",
 			"endtime":"",
 			"url":""
 		}
-	],
-	"sale":[
-
 	],
 	"auction":[
 
