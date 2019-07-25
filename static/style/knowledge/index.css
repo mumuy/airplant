@@ -1,0 +1,32 @@
+.mod-article{
+	margin-bottom: 20px;
+}
+.mod-article .hd h1{
+	line-height: 36px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.mod-article .bd h3{
+	margin-top: 20px;
+	line-height: 30px;
+	font-size: 18px;
+}
+.mod-article .bd h4{
+	margin-top: 10px;
+	line-height: 30px;
+	font-size: 16px;
+}
+.mod-article .bd p{
+	margin-bottom: 7px;
+	line-height: 24px;
+	text-indent: 2em;
+}
+.mod-article .bd strong{
+	font-weight: bold;
+}
+.mod-article blockquote{
+	margin: 10px;
+    padding: 10px 20px;
+    background: #f8f8f8;
+    border-radius: 6px;
+}
