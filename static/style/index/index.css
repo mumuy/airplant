@@ -12,12 +12,26 @@
 }
 
 .mod-panel{
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 .mod-panel .hd{
+	padding-top: 5px;
+	border-bottom: 1px solid #f0f0f0;
+}
+.mod-panel .hd h3{
+	display: inline-block;
+	min-width: 90px;
+	padding: 0 20px;
+	background: #23afaf;
+	border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
 	line-height: 36px;
-	font-size: 18px;
-	color: #333;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+}
+.mod-panel .bd{
+	padding: 15px 20px;
 }
 .mod-panel .bd ul{
 	overflow:hidden;
@@ -25,8 +39,8 @@
 .mod-panel .bd li{
 	float: left;
 	width: 25%;
-	height: 27px;
-	line-height: 26px;
+	height: 30px;
+	line-height: 30px;
 }
 .mod-panel .bd li a{
 	padding-bottom: 2px;
@@ -48,6 +62,12 @@
 }
 
 @media screen and (max-width: 800px){
+	.mod-panel{
+		margin-bottom: 15px;
+	}
+	.mod-panel .bd{
+		padding: 10px;
+	}
 	.mod-panel .bd li{
 		width: 50%;
 	}

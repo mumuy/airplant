@@ -1,6 +1,6 @@
-html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h3,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h3,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}
 html{
-	height:100%;
+    height:100%;
 }
 body{
 	height:100%;
@@ -12,14 +12,21 @@ a{
 	text-decoration: none;
 	color:#666;
 }
+img{
+	vertical-align: middle;
+}
+
 .wrapper{
 	position: relative;
-	width: 1200px;
 	margin: 0 auto;
 	min-height: 100%;
 }
+.inner{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
 .container{
-	margin: 0 20px;
 	padding-bottom: 80px;
 }
 .container .side{
@@ -31,9 +38,8 @@ a{
 }
 header{
 	position: relative;
-	height: 135px;
-	margin: 0 20px 15px;
-	border-bottom: 1px solid #eee;
+	margin-bottom: 25px;
+	border-bottom: 3px solid #23afaf;
 }
 footer{
 	position: absolute;
@@ -47,55 +53,48 @@ footer{
 .mod-head{
 	position: relative;
 }
+.mod-head .bd{
+	display: flex;
+	line-height: 150px;
+}
+.mod-head .logo{
+	outline: none;
+}
 .mod-head .info{
-	position: absolute;
-	top: 60px;
-	right: 0;
-	line-height: 24px;
-	text-align: right;
+	padding: 45px 20px;
+	line-height: 30px;
 }
 .mod-head .info h2{
-	font-size: 22px;
+	font-size: 24px;
+	color: #333;
+}
+.mod-head menu{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	margin: 0 50px;
+	padding: 0;
+}
+.mod-head menu li a{
+	display: block;
+	padding: 0 30px;
+	font-size: 18px;
+}
+.mod-head menu li.active a{
+	background: #fafafa;
 	color: #333;
 }
 
-.mod-menu li{
-	margin-bottom: 10px;
-}
-.mod-menu li a{
-	display: inline-block;
-	padding: 0 20px;
-	height: 24px;
-	line-height: 24px;
-}
-.mod-menu li.active a{
-	background: #333;
-	color: #fff;
-}
-
-.mod-notice{
-	margin-bottom: 20px;
-	height: 30px;
-	line-height: 30px;
-	padding: 0 12px;
-	background: #eee;
-	border-radius: 3px;
-}
-.mod-notice .icon-notice{
-	padding-left: 30px;
-	background: url('../../image/index/icon-notice.png') 0 center no-repeat;
-}
 
 @media screen and (max-width: 800px){
 	.wrapper{
 		width: auto;
 	}
-	header{
-		margin: 0 15px 10px;
-		height: 100px;
+	.inner{
+		padding: 0 10px;
 	}
-	.container{
-		margin: 0 10px;
+	header .inner{
+		padding: 0;
 	}
 	.container .side{
 		float: none;
@@ -105,29 +104,40 @@ footer{
 		margin-left: 0;
 	}
 
+	.mod-head .bd{
+		position: relative;
+		flex-direction: column;
+		line-height: 90px;
+	}
 	.mod-head .logo{
 		float: left;
 	}
-	.mod-head img{
+	.mod-head .logo img{
 		width: 90px;
 		height: 90px;
 	}
 	.mod-head .info{
-		position: static;
-		margin-left: 120px;
-		padding: 25px 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 20px;
+		line-height: 25px;
 	}
-
-	.mod-menu ul{
-		overflow: hidden;
+	.mod-head .info h2{
+		font-size: 20px;
 	}
-	.mod-menu li{
-		float: left;
-		width: 20%;
+	.mod-head menu{
+		margin: 0;
+		background: #f8f8f8;
+		line-height: 40px;
 	}
-	.mod-menu li a{
-		display: block;
-		padding: 0 5px;
+	.mod-head menu li{
+		flex: 1;
+		min-width: 0;
 		text-align: center;
+	}
+	.mod-head menu li a{
+		padding: 0 10px;
+		font-size: 15px;
 	}
 }
